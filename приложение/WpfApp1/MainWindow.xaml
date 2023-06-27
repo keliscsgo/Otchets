@@ -1,0 +1,88 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+Title="Обратная связь от врача"
+Width="800"
+Height="600"
+ Background="#007ACC">
+    <Grid>
+        <Label Content="Ваше ФИО:"
+HorizontalAlignment="Left"
+Margin="50,50,0,0"
+VerticalAlignment="Top"
+Foreground="White"/>
+        <TextBox Name="FullName"
+HorizontalAlignment="Left"
+Height="23"
+Margin="150,54,0,0"
+TextWrapping="Wrap"
+VerticalAlignment="Top"
+Width="300"/>
+
+        <Label Content="В какую дату удобно связаться с Вами?"
+HorizontalAlignment="Left"
+Margin="50,100,0,0"
+VerticalAlignment="Top"
+Foreground="White"/>
+        <DatePicker Name="BirthDate"
+HorizontalAlignment="Left"
+Margin="280,104,0,0"
+VerticalAlignment="Top"
+Width="120"/>
+
+        <Label Content="Пол:"
+HorizontalAlignment="Left"
+Margin="50,150,0,0"
+VerticalAlignment="Top"
+Foreground="White"/>
+        <ComboBox Name="Gender"
+HorizontalAlignment="Left"
+Margin="150,154,0,0"
+VerticalAlignment="Top"
+Width="120">
+            <ComboBoxItem Content="Мужской"/>
+            <ComboBoxItem Content="Женский"/>
+            <ComboBoxItem Content="Другое"/>
+        </ComboBox>
+
+        <Label Content="Что Вас тревожит?"
+HorizontalAlignment="Left"
+Margin="50,200,0,0"
+VerticalAlignment="Top"
+Foreground="White"/>
+        <TextBox Name="Zhaloby"
+HorizontalAlignment="Left"
+Height="23"
+Margin="170,204,0,0"
+TextWrapping="Wrap"
+VerticalAlignment="Top"
+Width="300"/>
+
+        <Label Content="Телефон:"
+HorizontalAlignment="Left"
+Margin="50,250,0,0"
+VerticalAlignment="Top"
+Foreground="White"/>
+        <TextBox Name="Phone"
+HorizontalAlignment="Left"
+Height="23"
+Margin="150,254,0,0"
+TextWrapping="Wrap"
+VerticalAlignment="Top"
+Width="120"/>
+
+        <Button Name="SaveButton"
+Content="Отправить запрос"
+HorizontalAlignment="Left"
+Margin="50,350,0,0"
+VerticalAlignment="Top"
+Width="120" Click="SaveButton_Click"/>
+
+        <Button Name="CancelButton"
+Content="Отмена"
+HorizontalAlignment="Left"
+Margin="200,350,0,0"
+VerticalAlignment="Top"
+Width="120" Click="CancelButton_Click"/>
+    </Grid>
+</Window>
